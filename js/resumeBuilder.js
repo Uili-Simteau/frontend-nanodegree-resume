@@ -100,3 +100,38 @@ var work = {
     ]
 };
 
+
+var education = {
+    "schools" : [
+    {
+        "name" : "Enspiral Dev Academy",
+        "years" : "2016",
+    },
+
+    {
+        "name" : "Enspiral Dev Academy",
+        "years" : "2016",
+    },
+
+    {
+        "name" : ,
+        "years" : ,
+        "location" : ,
+        "major" : ,
+    },
+
+    {
+        "name" : ,
+        "years" : ,
+        "location" : ,
+        "major" : ,
+    },
+
+    {
+        "name" : ,
+        "years" : ,
+        "location" : ,
+        "major" : ,
+    },
+    ]
+};
