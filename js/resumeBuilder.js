@@ -109,29 +109,24 @@ var education = {
     },
 
     {
-        "name" : "Enspiral Dev Academy",
-        "years" : "2016",
+        "name" : "Weltec",
+        "years" : "2013",
+        "location" : "Lower Hutt",
+        "major" : "Electrical Appliance Installer Certificate",
     },
 
     {
-        "name" : ,
-        "years" : ,
-        "location" : ,
-        "major" : ,
+        "name" : "Melbourne University",
+        "years" : "1997 to 1999",
+        "location" : "Melbourne, Victoria, Australia",
+        "major" : "Postgraduate Diploma - Art Curatorship and Museum Management",
     },
 
     {
-        "name" : ,
-        "years" : ,
-        "location" : ,
-        "major" : ,
-    },
-
-    {
-        "name" : ,
-        "years" : ,
-        "location" : ,
-        "major" : ,
-    },
+        "name" : "Victoria University",
+        "years" : "1994 to 1996",
+        "location" : "Wellington",
+        "major" : "Art History",
+    }
     ]
 };
