@@ -39,21 +39,6 @@ var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
 var formattedSkills = HTMLskills.replace("%data%", bio.skills);
 
-
-//append formatted data
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-$("#header").prepend(formattedBioPic);
-$("#topContacts").prepend(formattedMobile);
-$("#topContacts").prepend(formattedEmail);
-$("#topContacts").prepend(formattedTwitter);
-$("#topContacts").prepend(formattedGithub);
-$("#topContacts").prepend(formattedBlog);
-$("#topContacts").prepend(formattedLocation);
-$("#topContacts").prepend(formattedWelcomeMsg);
-$("#topContacts").append(formattedSkills);
-
-
 //an array of objects
 var work = {
     "jobs" : [
@@ -130,3 +115,20 @@ var education = {
     }
     ]
 };
+
+
+
+//append formatted data
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+$("#header").prepend(formattedBioPic);
+$("#topContacts").prepend(formattedMobile);
+$("#topContacts").prepend(formattedEmail);
+$("#topContacts").prepend(formattedTwitter);
+$("#topContacts").prepend(formattedGithub);
+$("#topContacts").prepend(formattedBlog);
+$("#topContacts").prepend(formattedLocation);
+$("#topContacts").prepend(formattedWelcomeMsg);
+$("#topContacts").append(formattedSkills);
+
+
