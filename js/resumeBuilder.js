@@ -78,23 +78,23 @@ var work = {
         "employer" : "Archives New Zealand",
         "dates" : "2006 to 2014",
         "city" : "Wellington"
-        "description" : "Providing archival assistance to researchers, arrangement and description work on the film negative collection. YouTube channel development."
+        "description" : "Providing archival assistance to researchers, arrangement and description work on the film negative collection. YouTube channel development.",
     },
 
     {
         "position" : "Paint consultant and Bunnings Team Member",
         "employer" : "Bunnings",
         "dates" : "2004 - 2006",
-        "city" : "Lower Hutt"
-        "description" : ""
+        "city" : "Lower Hutt",
+        "description" : "Advised on appropriate paint and materials for customers to use, mixed paint colours, provided general customer service.",
     },
 
     {
-        "position" : "student",
-        "employer" : "Enspiral Dev Academy",
-        "dates" : "2016",
-        "city" : "Wellington"
-        "description" : ""
+        "position" : "Concept Developer",
+        "employer" : "Dowse Art Museum",
+        "dates" : "2002 to 2004",
+        "city" : "Lower Hutt",
+        "description" : "Developed exhibition concepts and assisted in exhibition programme development",
     },
 
     ]
