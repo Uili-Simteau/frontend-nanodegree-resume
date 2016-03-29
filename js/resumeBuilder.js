@@ -11,10 +11,11 @@ console.log(funThoughts);
 $("#main").append(funThoughts); */
 
 var formattedName = HTMLheaderName.replace("%data%", "Uili Fecteau");
-$("#header").append(formattedName);
+
 
 var formattedRole = HTMLheaderRole.replace("%data%", "Web Developer");
-$("#header").append(formattedRole);
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
 
 console.log(formattedName);
 console.log(formattedRole);
