@@ -17,7 +17,7 @@ var formattedRole = HTMLheaderRole.replace("%data%", "Web Developer");
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 
-/*var bio = {
+var bio = {
     "name" : "Uili Fecteau",
     "Role" : "Web Developer",
     "Email": "sim**@gmail.com",
@@ -31,7 +31,7 @@ $("#header").prepend(formattedName);
     "welcomeMmsg" : "Hi there, Welcome to my resume! Take your \
     shoes off, stay a while.",
     "skills" : skills,
-};*/
+};
 var formattedMobile = HTMLmobile.replace("%data%", bio.mobile);
 var formattedEmail = HTMLemail.replace("%data%", bio.email);
 var formattedTwitter = HTMLtwitter.replace("%data%", bio.twitter);
