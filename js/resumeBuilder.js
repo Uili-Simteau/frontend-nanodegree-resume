@@ -20,16 +20,18 @@ $("#header").prepend(formattedName);
 var bio = {
     "name" : "Uili Fecteau",
     "Role" : "Web Developer",
-    "Email": "sim**@gmail.com",
-    "mobile" : "021 *****22",
-    "twitter" : "Simteau",
-    "github" : "simteau",
-    "blog" : "simteau",
-    "location" : "Naenae, Lower Hutt, 5011, New Zealand",
-    "bioPic" : "images/image-uili.jpeg",
-    "welcomeMsg" : "Hi there, Welcome to my resume! Take your \
-    shoes off, stay a while.",
+    "comtacts" : {
+        "mobile" : "021 *****22",
+        "Email": "simteau@gmail.com",
+        "github" : "Uili-Simteau.github.io.git",
+        "twitter" : "Simteau",
+        "blog" : "simteau",
+        "location" : "Naenae, Lower Hutt, 5011, New Zealand"
+},
+
+    "welcomeMsg" : "Hi there, Welcome to my resume! Take your shoes off, stay a while.",
     "skills" : skills,
+    "bioPic" : "images/image-uili.jpeg",
 };
 
 var formattedMobile = HTMLmobile.replace("%data%", bio.mobile);
@@ -48,8 +50,8 @@ $("#topContacts").prepend(formattedTwitter);
 $("#topContacts").prepend(formattedGithub);
 $("#topContacts").prepend(formattedBlog);
 $("#topContacts").prepend(formattedLocation);
-$("#topContacts").prepend(formattedBioPic);
+$("#main").prepend(formattedBioPic);
 $("#topContacts").prepend(formattedWelcomeMsg);
-$("#topContacts").prepend(formattedSkills);
+$("#topContacts").append(formattedSkills);
 
 
