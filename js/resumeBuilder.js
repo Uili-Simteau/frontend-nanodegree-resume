@@ -167,10 +167,10 @@ projects.display = function () {
         var formattedProjectImage = HTMLprojectImage.replace("%data%", projects["project"].project_image);
 
         //append projects
-        $(".project-entry").append(formattedProjectTitle);
-        $(".project-entry").append(formattedProjectDates);
-        $(".project-entry").append(formattedProjectDescription);
-        $(".project-entry").append(formattedProjectImage);
+        $(".project-entry:last").append(formattedProjectTitle);
+        $(".project-entry:last").append(formattedProjectDates);
+        $(".project-entry:last").append(formattedProjectDescription);
+        $(".project-entry:last").append(formattedProjectImage);
     }
 }
 
