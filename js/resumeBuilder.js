@@ -27,7 +27,7 @@ var formattedBlog = HTMLblog.replace("%data%", bio.contacts["blog"]);
 var formattedLocation = HTMLlocation.replace("%data%", bio.contacts["location"]);
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
-var formattedSkills = HTMLskills.replace("%data%", bio.skills);
+
 
 //append formatted bio data
 $("#header").prepend(formattedRole);
@@ -45,7 +45,15 @@ $("#header").append(formattedWelcomeMsg);
 
 if (bio.skills.length > 0) {
     $("#header").append(HTMLskillsStart);
-    $("#skills").append(formattedSkills);
+
+    var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+    $("#skills").append(formattedSkill);
+    var formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
+    $("#skills").append(formattedSkill);
+    var formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+    $("#skills").append(formattedSkill);
+    var formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+    $("#skills").append(formattedSkill);
 
 }
 //an array of objects
