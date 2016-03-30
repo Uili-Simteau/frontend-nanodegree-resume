@@ -32,7 +32,7 @@ var formattedSkills = HTMLskills.replace("%data%", bio.skills);
 //append formatted bio data
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
-$("#header").prepend(formattedBioPic);
+$("#header").append(formattedBioPic);
 $("#topContacts").prepend(formattedMobile);
 $("#topContacts").prepend(formattedEmail);
 $("#topContacts").prepend(formattedTwitter);
@@ -40,8 +40,14 @@ $("#topContacts").prepend(formattedGithub);
 $("#topContacts").prepend(formattedBlog);
 $("#topContacts").prepend(formattedLocation);
 $("#topContacts").prepend(formattedWelcomeMsg);
-$("#topContacts").append(formattedSkills);
 
+
+
+if (bio.skills !== 0) {
+    $("#header").append(HTMLskillsStart);
+    $("#skills").append(formattedSkills);
+
+}
 //an array of objects
 var work = {
     "jobs" : [
