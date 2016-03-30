@@ -6,7 +6,7 @@ var bio = {
         "mobile" : "021 2394522",
         "email": "simteau@gmail.com",
         "github" : "Uili-Simteau.github.io.git",
-        "twitter" : "Simteau",
+        "twitter" : "@Simteau",
         "blog" : "simteau",
         "location" : "Naenae, Lower Hutt, 5011, New Zealand"
 },
