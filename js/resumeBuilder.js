@@ -118,7 +118,7 @@ var projects = {
         "dates" : "2016",
         "description" : "An on-going, ever developing, blog of my journey through the Dev Academy.",
         "project_image" : "#"
-    },
+    }
     ]
 };
 
