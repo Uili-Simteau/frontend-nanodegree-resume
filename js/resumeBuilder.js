@@ -158,7 +158,7 @@ var education = {
 
     {
         "name" : "Weltec",
-        "degree" : "Certificate in Electrical Appliance Installation"
+        "degree" : "Certificate in Electrical Appliance Installation",
         "dates" : "2013",
         "location" : "Lower Hutt",
         "major" : "Electrical Appliance theory",
@@ -175,7 +175,7 @@ var education = {
     {
         "name" : "Victoria University",
         "dates" : "1994 to 1996",
-        "degree" : "Bachelor of Arts"
+        "degree" : "Bachelor of Arts",
         "location" : "Wellington",
         "major" : "Art History",
     }
