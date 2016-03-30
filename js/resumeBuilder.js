@@ -183,11 +183,11 @@ var education = {
 };
 
 //format education
-var formattedSchoolName = HTMLschoolName.replace("%data%", education["schools"]["name"]);
-var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education["schools"]["degree"]);
-var formattedSchoolDates = HTMLschoolDates.replace("%data%", education["schools"]["dates"]);
-var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education["schools"]["location"]);
-var formattedSchoolMajor= HTMLschoolMajor.replace("%data%", education["schools"]["major"]);
+var formattedSchoolName = HTMLschoolName.replace("%data%", education["schools"].name);
+var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education["schools"].degree);
+var formattedSchoolDates = HTMLschoolDates.replace("%data%", education["schools"].dates);
+var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education["schools"].location);
+var formattedSchoolMajor= HTMLschoolMajor.replace("%data%", education["schools"].major);
 
 //append education
 $("#education").append(HTMLworkStart);
