@@ -22,7 +22,7 @@ var bio = {
 },
     "welcomeMsg" : "Hi there, Welcome to my resume! Take your shoes off, stay a while.",
     "skills" : ["Awesomeness", " JavaScript", " HTML", "CSS", " Art History", " Archival Research"],
-    "bioPic" : "images/image-uili.jpeg",
+    "bioPic" : "images/image-uili.jpeg"
 };
 
 //variables for modifying formatted elements with bio data
@@ -68,7 +68,7 @@ var work = {
         "employer" : "Warmup Wellington Ltd.",
         "dates" : "2014 to 2016",
         "location" : "Wellington",
-        "description" : "I installed underfloor heating elements, and constructed tiled showers with sheet membraine waterproofing",
+        "description" : "I installed underfloor heating elements, and constructed tiled showers with sheet membraine waterproofing"
     },
 
     {
@@ -76,7 +76,7 @@ var work = {
         "employer" : "Archives New Zealand",
         "dates" : "2006 to 2014",
         "location" : "Wellington",
-        "description" : "Providing archival assistance to researchers, arrangement and description work on the film negative collection. YouTube channel development.",
+        "description" : "Providing archival assistance to researchers, arrangement and description work on the film negative collection. YouTube channel development."
     },
 
     {
@@ -84,7 +84,7 @@ var work = {
         "employer" : "Bunnings",
         "dates" : "2004 - 2006",
         "location" : "Lower Hutt",
-        "description" : "Advised on appropriate paint and materials for customers to use, mixed paint colours, provided general customer service.",
+        "description" : "Advised on appropriate paint and materials for customers to use, mixed paint colours, provided general customer service."
     },
 
     {
@@ -92,8 +92,8 @@ var work = {
         "employer" : "Dowse Art Museum",
         "dates" : "2002 to 2004",
         "location" : "Lower Hutt",
-        "description" : "Developed exhibition concepts and assisted in exhibition programme development",
-    },
+        "description" : "Developed exhibition concepts and assisted in exhibition programme development"
+    }
 
     ]
 };
@@ -161,7 +161,7 @@ var education = {
         "degree" : "Certificate in Electrical Appliance Installation",
         "dates" : "2013",
         "location" : "Lower Hutt",
-        "major" : "Electrical Appliance theory",
+        "major" : "Electrical Appliance theory"
     },
 
     {
@@ -169,7 +169,7 @@ var education = {
         "degree" : "Postgraduate Diploma - Art Curatorship and Museum Management",
         "dates" : "1997 to 1999",
         "location" : "Melbourne, Victoria, Australia",
-        "major" : "Cross-cultural exhibition practice",
+        "major" : "Cross-cultural exhibition practice"
     },
 
     {
@@ -177,7 +177,7 @@ var education = {
         "dates" : "1994 to 1996",
         "degree" : "Bachelor of Arts",
         "location" : "Wellington",
-        "major" : "Art History",
+        "major" : "Art History"
     }
     ]
 };
