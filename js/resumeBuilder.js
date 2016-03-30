@@ -34,16 +34,16 @@ $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 $("#header").append(formattedBioPic);
 $("#topContacts").prepend(formattedMobile);
-$("#topContacts").prepend(formattedEmail);
-$("#topContacts").prepend(formattedTwitter);
-$("#topContacts").prepend(formattedGithub);
-$("#topContacts").prepend(formattedBlog);
-$("#topContacts").prepend(formattedLocation);
-$("#topContacts").prepend(formattedWelcomeMsg);
+$("#topContacts").append(formattedEmail);
+$("#topContacts").append(formattedTwitter);
+$("#topContacts").append(formattedGithub);
+$("#topContacts").append(formattedBlog);
+$("#topContacts").append(formattedLocation);
+$("#header").append(formattedWelcomeMsg);
 
 
 
-if (bio.skills !== 0) {
+if (bio.skills.length > 0) {
     $("#header").append(HTMLskillsStart);
     $("#skills").append(formattedSkills);
 
