@@ -39,86 +39,7 @@ var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
 var formattedSkills = HTMLskills.replace("%data%", bio.skills);
 
-//an array of objects
-var work = {
-    "jobs" : [
-    {
-        "position" : "student",
-        "employer" : "Enspiral Dev Academy",
-        "dates" : "2016",
-        "city" : "Wellington",
-        "description" : "Awesome Web Developer adn nice guy in training."
-    },
-
-    {
-        "position" : "Under Tile Heating Installer",
-        "employer" : "Warmup Wellington Ltd.",
-        "dates" : "2014 to 2016",
-        "city" : "Wellington"
-        "description" : "I installed underfloor heating elements, and constructed tiled showers with sheet membraine waterproofing",
-    },
-
-    {
-        "position" : "Archivist",
-        "employer" : "Archives New Zealand",
-        "dates" : "2006 to 2014",
-        "city" : "Wellington"
-        "description" : "Providing archival assistance to researchers, arrangement and description work on the film negative collection. YouTube channel development.",
-    },
-
-    {
-        "position" : "Paint consultant and Bunnings Team Member",
-        "employer" : "Bunnings",
-        "dates" : "2004 - 2006",
-        "city" : "Lower Hutt",
-        "description" : "Advised on appropriate paint and materials for customers to use, mixed paint colours, provided general customer service.",
-    },
-
-    {
-        "position" : "Concept Developer",
-        "employer" : "Dowse Art Museum",
-        "dates" : "2002 to 2004",
-        "city" : "Lower Hutt",
-        "description" : "Developed exhibition concepts and assisted in exhibition programme development",
-    },
-
-    ]
-};
-
-
-var education = {
-    "schools" : [
-    {
-        "name" : "Enspiral Dev Academy",
-        "years" : "2016",
-    },
-
-    {
-        "name" : "Weltec",
-        "years" : "2013",
-        "location" : "Lower Hutt",
-        "major" : "Electrical Appliance Installer Certificate",
-    },
-
-    {
-        "name" : "Melbourne University",
-        "years" : "1997 to 1999",
-        "location" : "Melbourne, Victoria, Australia",
-        "major" : "Postgraduate Diploma - Art Curatorship and Museum Management",
-    },
-
-    {
-        "name" : "Victoria University",
-        "years" : "1994 to 1996",
-        "location" : "Wellington",
-        "major" : "Art History",
-    }
-    ]
-};
-
-
-
-//append formatted data
+//append formatted bio data
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 $("#header").prepend(formattedBioPic);
@@ -130,5 +51,110 @@ $("#topContacts").prepend(formattedBlog);
 $("#topContacts").prepend(formattedLocation);
 $("#topContacts").prepend(formattedWelcomeMsg);
 $("#topContacts").append(formattedSkills);
+
+//an array of objects
+var work = {
+    "jobs" : [
+    {
+        "title" : "student",
+        "employer" : "Enspiral Dev Academy",
+        "dates" : "2016",
+        "location" : "Wellington",
+        "description" : "Awesome Web Developer adn nice guy in training."
+    },
+
+    {
+        "title" : "Under Tile Heating Installer",
+        "employer" : "Warmup Wellington Ltd.",
+        "dates" : "2014 to 2016",
+        "location" : "Wellington"
+        "description" : "I installed underfloor heating elements, and constructed tiled showers with sheet membraine waterproofing",
+    },
+
+    {
+        "title" : "Archivist",
+        "employer" : "Archives New Zealand",
+        "dates" : "2006 to 2014",
+        "location" : "Wellington"
+        "description" : "Providing archival assistance to researchers, arrangement and description work on the film negative collection. YouTube channel development.",
+    },
+
+    {
+        "title" : "Paint consultant and Bunnings Team Member",
+        "employer" : "Bunnings",
+        "dates" : "2004 - 2006",
+        "location" : "Lower Hutt",
+        "description" : "Advised on appropriate paint and materials for customers to use, mixed paint colours, provided general customer service.",
+    },
+
+    {
+        "title" : "Concept Developer",
+        "employer" : "Dowse Art Museum",
+        "dates" : "2002 to 2004",
+        "location" : "Lower Hutt",
+        "description" : "Developed exhibition concepts and assisted in exhibition programme development",
+    },
+
+    ]
+};
+
+//format work data
+var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work[""][]);
+var formattedWorkTitle = HTMLworkTitle.replace("%data%", work[""][]);
+var formattedWorkDates = HTMLworkDates.replace("%data%", work[""][]);
+var formattedWorkLocation = HTMLworkLocation.replace("%data%", work[""][]);
+var formattedWorkDescription = HTMLworkDescription.replace("%data%", work[""][]);
+
+
+//append work data
+$("#workExperience").append(HTMLworkStart);
+$("#workExperience").append(formattedWorkEmployer);
+$("#workExperience").append(formattedWorkTitle);
+$("#workExperience").append(formattedWorkDates);
+$("#workExperience").append(formattedWorkDescription);
+
+
+var education = {
+    "schools" : [
+    {
+        "name" : "Enspiral Dev Academy",
+        "degree" : "N/A",
+        "dates" : "2016",
+        "location" : "Wellington",
+        "major" : "JavaScript Web Development"
+    },
+
+    {
+        "name" : "Weltec",
+        "degree" : "Certificate in Electrical Appliance Installation"
+        "dates" : "2013",
+        "location" : "Lower Hutt",
+        "major" : "Electrical Appliance theory",
+    },
+
+    {
+        "name" : "Melbourne University",
+        "degree" : "Postgraduate Diploma - Art Curatorship and Museum Management",
+        "dates" : "1997 to 1999",
+        "location" : "Melbourne, Victoria, Australia",
+        "major" : "Cross-cultural exhibition practice",
+    },
+
+    {
+        "name" : "Victoria University",
+        "dates" : "1994 to 1996",
+        "degree" : "Bachelor of Arts"
+        "location" : "Wellington",
+        "major" : "Art History",
+    }
+    ]
+};
+
+
+
+
+
+
+//append
 
 
