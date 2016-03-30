@@ -113,6 +113,38 @@ $(".work-entry").append(formattedWorkTitle);
 $(".work-entry").append(formattedWorkDates);
 $(".work-entry").append(formattedWorkDescription);
 
+//projects
+var projects = {
+    "project" : [
+    {
+        "title" : "JS Racer",
+        "dates" : "2016",
+        "description" : "A simple, purely JavaScript, keyboard game.",
+        "project image" : "#"
+    },
+
+    {
+        "title" : "The Awesome Blog of Uili",
+        "dates" : "2016",
+        "description" : "An on-going, ever developing, blog of my journey through the Dev Academy.",
+        "project_image" : "#"
+    },
+    ]
+};
+
+//format projects
+var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects["project"].title);
+var formattedProjectDates = HTMLprojectDates.replace("%data%", projects["project"].dates);
+var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects["project"].description);
+var formattedProjectImage = HTMLprojectImage.replace("%data%", projects["project"].project_image);
+
+//append projects
+$("#projects").append(HTMLprojectStart);
+$(".project-entry").append(formattedProjectTitle);
+$(".project-entry").append(formattedProjectDates);
+$(".project-entry").append(formattedProjectDescription);
+$(".project-entry").append(formattedProjectImage);
+
 
 var education = {
     "schools" : [
