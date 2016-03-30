@@ -128,6 +128,7 @@ function displayWork(){
     }
 };
 displayWork();
+
 $(document).click(function(loc){
 
 var x = loc.pageX;
@@ -157,22 +158,24 @@ var projects = {
 
 //Encapsulating functions quiz
 projects.display = function () {
-    for(i in projects.project){
+    for(project in projects.project){
         //append projectstart
-        $("#projects").append(HTMLprojectStart);
-//format projects
-        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects["project"].title);
-        var formattedProjectDates = HTMLprojectDates.replace("%data%", projects["project"].dates);
-        var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects["project"].description);
-        var formattedProjectImage = HTMLprojectImage.replace("%data%", projects["project"].project_image);
 
-        //append projects
+//format projects
+        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.project[project].title);
+        var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.project[project].dates);
+        var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.project[project].description);
+        var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.project[project].project_image);
+          //append projects
+        $("#projects").append(HTMLprojectStart);
         $(".project-entry:last").append(formattedProjectTitle);
         $(".project-entry:last").append(formattedProjectDates);
         $(".project-entry:last").append(formattedProjectDescription);
         $(".project-entry:last").append(formattedProjectImage);
+
     }
-}
+};
+projects.display();
 
 
 
