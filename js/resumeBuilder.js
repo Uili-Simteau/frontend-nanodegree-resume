@@ -109,20 +109,23 @@ var work = {
 
 
 //work for-in loop
-for(job in work.jobs) {
-    $("#workExperience").append(HTMLworkStart);
-    var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-    var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-    var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-    var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
-    var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+function displayWork(){
+    for(job in work.jobs) {
+        $("#workExperience").append(HTMLworkStart);
 
-    var formattedWorkEmployerTitle = formattedWorkEmployer + formattedWorkTitle
+        var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+        var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+        var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+        var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+        var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 
-    $(".work-entry:last").append(formattedWorkEmployerTitle);
-    $(".work-entry:last").append(formattedWorkDates);
-    $(".work-entry:last").append(formattedWorkLocation);
-    $(".work-entry:last").append(formattedWorkDescription);
+        var formattedWorkEmployerTitle = formattedWorkEmployer + formattedWorkTitle
+
+        $(".work-entry:last").append(formattedWorkEmployerTitle);
+        $(".work-entry:last").append(formattedWorkDates);
+        $(".work-entry:last").append(formattedWorkLocation);
+        $(".work-entry:last").append(formattedWorkDescription);
+    }
 };
 
 //projects
