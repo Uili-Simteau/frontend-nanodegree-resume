@@ -110,12 +110,13 @@ var work = {
 
 //work for-in loop
 for(job in work.jobs) {
-    var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work["jobs"].employer);
-    var formattedWorkTitle = HTMLworkTitle.replace("%data%", work["jobs"].title);
-    var formattedWorkDates = HTMLworkDates.replace("%data%", work["jobs"].dates);
-    var formattedWorkLocation = HTMLworkLocation.replace("%data%", work["jobs"].location);
-    var formattedWorkDescription = HTMLworkDescription.replace("%data%", work["jobs"].description);
     $("#workExperience").append(HTMLworkStart);
+    var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+    var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+    var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+    var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+    var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+
     $(".work-entry:last").append(formattedWorkEmployer+formattedWorkTitle);
     $(".work-entry:last").append(formattedWorkDates);
     $(".work-entry:last").append(formattedWorkLocation);
