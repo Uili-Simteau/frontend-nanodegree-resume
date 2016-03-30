@@ -108,10 +108,10 @@ var formattedWorkDescription = HTMLworkDescription.replace("%data%", work["jobs"
 
 //append work data
 $("#workExperience").append(HTMLworkStart);
-$("#workExperience").append(formattedWorkEmployer);
-$("#workExperience").append(formattedWorkTitle);
-$("#workExperience").append(formattedWorkDates);
-$("#workExperience").append(formattedWorkDescription);
+$(".work-entry").append(formattedWorkEmployer);
+$(".work-entry").append(formattedWorkTitle);
+$(".work-entry").append(formattedWorkDates);
+$(".work-entry").append(formattedWorkDescription);
 
 
 var education = {
@@ -151,17 +151,16 @@ var education = {
 };
 
 //format education
-var formatted = .replace("%data%", education["schools"][""]);
-var formatted = .replace("%data%", education["schools"][""]);
-var formatted = .replace("%data%", education["schools"][""]);
-var formatted = .replace("%data%", education["schools"][""]);
-var formatted = .replace("%data%", education["schools"][""]);
-var formatted = .replace("%data%", education["schools"][""]);
+var formattedSchoolName = HTMLschoolName.replace("%data%", education["schools"]["name"]);
+var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education["schools"]["degree"]);
+var formattedSchoolDates = HTMLschoolDates.replace("%data%", education["schools"]["dates"]);
+var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education["schools"]["location"]);
+var formattedSchoolMajor= HTMLschoolMajor.replace("%data%", education["schools"]["major"]);
 
-
-
-
-
-//append
-
-
+//append education
+$("#education").append(HTMLworkStart);
+$(".education-entry").append(formattedSchoolName);
+$(".education-entry").append(formattedSchoolDegree);
+$(".education-entry").append(formattedSchoolDates);
+$(".education-entry").append(formattedSchoolLocation);
+$(".education-entry").append(formattedSchoolMajor);
