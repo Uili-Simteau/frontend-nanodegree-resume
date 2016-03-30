@@ -99,11 +99,11 @@ var work = {
 };
 
 //format work data
-var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work["jobs"][employer]);
-var formattedWorkTitle = HTMLworkTitle.replace("%data%", work["jobs"][title]);
-var formattedWorkDates = HTMLworkDates.replace("%data%", work["jobs"][dates]);
-var formattedWorkLocation = HTMLworkLocation.replace("%data%", work["jobs"][location]);
-var formattedWorkDescription = HTMLworkDescription.replace("%data%", work["jobs"][description]);
+var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work["jobs"].employer);
+var formattedWorkTitle = HTMLworkTitle.replace("%data%", work["jobs"].title);
+var formattedWorkDates = HTMLworkDates.replace("%data%", work["jobs"].dates);
+var formattedWorkLocation = HTMLworkLocation.replace("%data%", work["jobs"].location);
+var formattedWorkDescription = HTMLworkDescription.replace("%data%", work["jobs"].description);
 
 
 //append work data
