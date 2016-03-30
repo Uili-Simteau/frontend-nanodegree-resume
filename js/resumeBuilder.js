@@ -67,7 +67,7 @@ var work = {
         "title" : "Under Tile Heating Installer",
         "employer" : "Warmup Wellington Ltd.",
         "dates" : "2014 to 2016",
-        "location" : "Wellington"
+        "location" : "Wellington",
         "description" : "I installed underfloor heating elements, and constructed tiled showers with sheet membraine waterproofing",
     },
 
