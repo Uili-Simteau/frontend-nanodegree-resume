@@ -127,6 +127,14 @@ function displayWork(){
         $(".work-entry:last").append(formattedWorkDescription);
     }
 };
+displayWork();
+$(document).click(function(loc){
+
+var x = loc.pageX;
+var y = loc.pageY;
+
+logClicks(x,y);
+});
 
 //projects
 var projects = {
@@ -147,18 +155,29 @@ var projects = {
     ]
 };
 
+//Encapsulating functions quiz
+projects.display = function () {
+    for(i in projects.project){
+        //append projectstart
+        $("#projects").append(HTMLprojectStart);
 //format projects
-var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects["project"].title);
-var formattedProjectDates = HTMLprojectDates.replace("%data%", projects["project"].dates);
-var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects["project"].description);
-var formattedProjectImage = HTMLprojectImage.replace("%data%", projects["project"].project_image);
+        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects["project"].title);
+        var formattedProjectDates = HTMLprojectDates.replace("%data%", projects["project"].dates);
+        var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects["project"].description);
+        var formattedProjectImage = HTMLprojectImage.replace("%data%", projects["project"].project_image);
 
-//append projects
-$("#projects").append(HTMLprojectStart);
-$(".project-entry").append(formattedProjectTitle);
-$(".project-entry").append(formattedProjectDates);
-$(".project-entry").append(formattedProjectDescription);
-$(".project-entry").append(formattedProjectImage);
+        //append projects
+        $(".project-entry").append(formattedProjectTitle);
+        $(".project-entry").append(formattedProjectDates);
+        $(".project-entry").append(formattedProjectDescription);
+        $(".project-entry").append(formattedProjectImage);
+    }
+}
+
+
+
+
+
 
 
 var education = {
@@ -211,3 +230,15 @@ $(".education-entry").append(formattedSchoolDegree);
 $(".education-entry").append(formattedSchoolDates);
 $(".education-entry").append(formattedSchoolLocation);
 $(".education-entry").append(formattedSchoolMajor);
+
+//the Name Game
+
+function inName(name) {
+    var names = name.split(" ");
+    console.log(names);
+    names[1] = names[1].toUpperCase();
+    names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
+    finalName = names.join(" ");
+    return finalName;
+};
+$("#main").append(internationalizeButton);
