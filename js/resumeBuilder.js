@@ -75,7 +75,7 @@ var work = {
         "title" : "Archivist",
         "employer" : "Archives New Zealand",
         "dates" : "2006 to 2014",
-        "location" : "Wellington"
+        "location" : "Wellington",
         "description" : "Providing archival assistance to researchers, arrangement and description work on the film negative collection. YouTube channel development.",
     },
 
