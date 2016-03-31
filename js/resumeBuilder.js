@@ -245,3 +245,5 @@ function inName(name) {
     return finalName;
 };
 $("#main").append(internationalizeButton);
+
+$("#mapDiv").append(googleMap);
