@@ -129,6 +129,7 @@ function displayWork(){
 };
 displayWork();
 
+//click location logger
 $(document).click(function(loc){
 
 var x = loc.pageX;
@@ -159,7 +160,7 @@ var projects = {
 //Encapsulating functions quiz
 projects.display = function () {
     for(project in projects.project){
-        //append projectstart
+
 
 //format projects
         var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.project[project].title);
@@ -219,20 +220,31 @@ var education = {
     ]
 };
 
-//format education
-var formattedSchoolName = HTMLschoolName.replace("%data%", education["schools"].name);
-var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education["schools"].degree);
-var formattedSchoolDates = HTMLschoolDates.replace("%data%", education["schools"].dates);
-var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education["schools"].location);
-var formattedSchoolMajor= HTMLschoolMajor.replace("%data%", education["schools"].major);
+//education display function
+education.display = function () {
+    for(school in education.schools){
 
-//append education
-$("#education").append(HTMLworkStart);
-$(".education-entry").append(formattedSchoolName);
-$(".education-entry").append(formattedSchoolDegree);
-$(".education-entry").append(formattedSchoolDates);
-$(".education-entry").append(formattedSchoolLocation);
-$(".education-entry").append(formattedSchoolMajor);
+
+        //format education
+        var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
+        var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+        var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+        var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+        var formattedSchoolMajor= HTMLschoolMajor.replace("%data%", education.schools[school].major);
+
+        //append education
+        $("#education").append(HTMLworkStart);
+        $(".education-entry").append(formattedSchoolName);
+        $(".education-entry").append(formattedSchoolDegree);
+        $(".education-entry").append(formattedSchoolDates);
+        $(".education-entry").append(formattedSchoolLocation);
+        $(".education-entry").append(formattedSchoolMajor);
+
+    }
+};
+projects.display();
+
+
 
 //the Name Game
 
